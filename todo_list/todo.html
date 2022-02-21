@@ -1,0 +1,55 @@
+<!--
+<html>
+    <head>
+        <title>Todo List</title>
+    </head>
+    <body>
+        <div>
+            <input type='text' name='todo_input' id='todo'>
+            <button type='submit' onclick="add_todo_fun()">Add Todo</button>
+
+            <div class="count_todo">Total Todo: <span id="count_span">0</span></div>
+            <div class='todos'></div>
+        </div>
+    </body>
+    <script src='./script.js'></script>
+   
+</html>
+-->
+
+<html>
+    <head>
+        <title>Todo List</title>
+        <style type="text/css">
+            .complete_todos,.incomplete_todos{
+                float: left;
+                padding:10px;
+                margin-left: 100px;
+                background-color: lightgreen;
+            }
+            .btn-container{
+                margin-left: 520px;
+                margin-bottom: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1 style="text-align: center;">Todo List</h1>
+            <!--<input type='text' name='todo_input' id='todo'>
+            <button type='submit' onclick="add_todo_fun()">Add Todo</button>
+
+            <div class="count_todo">Total Todo: <span id="count_span">0</span></div>-->
+            <div class="btn-container">
+                <button id="com_todo">Completed Todos</button>
+                <button id="incom_todo">Incompleted Todos</button>
+            </div>
+
+            <div class='complete_todos'><span id="head_com" style="display: block;"><h1>Completed Todo</h1></span></div>
+            <div class='incomplete_todos'><span id="head_incom" style="display: block;"><h1>Incompleted Todo</h1></span></div>
+        </div>
+    </body>
+    <script src='./script.js'></script>
+   
+</html>
